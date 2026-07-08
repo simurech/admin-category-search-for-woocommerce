@@ -1,8 +1,8 @@
-# WooCommerce Admin Category Search
+# Admin Category Search for WooCommerce
 
 Fügt ein Live-Suchfeld in die **Produktkategorien-Metabox** des WooCommerce-Produkt-Editors ein. Statt bei vielen Kategorien endlos zu scrollen, tippst du einfach los und die Liste filtert sich in Echtzeit.
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue)
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
 ![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-blue)
 
@@ -18,8 +18,7 @@ Fügt ein Live-Suchfeld in die **Produktkategorien-Metabox** des WooCommerce-Pro
 - ⚡ Rein clientseitig (JavaScript), keine zusätzlichen AJAX-Anfragen oder Datenbankabfragen
 - 🧩 Funktioniert mit der Standard-Kategorienliste des Produkt-Editors (`categorychecklist`)
 - 🔄 Erkennt nachträglich geladene Metaboxen per `MutationObserver`
-- 🆙 Automatische Updates über GitHub-Releases (Plugin Update Checker)
-- 🌐 Übersetzbar (Text Domain: `woocommerce-admin-category-search`)
+- 🌐 Übersetzbar (Text Domain: `admin-category-search-for-woocommerce`)
 
 ## Voraussetzungen
 
@@ -29,19 +28,23 @@ Fügt ein Live-Suchfeld in die **Produktkategorien-Metabox** des WooCommerce-Pro
 | PHP              | 8.0 oder höher |
 | WooCommerce      | aktiv erforderlich |
 
-Getestet bis WordPress 6.8.
+Getestet bis WordPress 7.0 und WooCommerce 10.9.3.
 
 ## Installation
 
-1. Lade die neueste Version unter [Releases](https://github.com/simurech/woocommerce-admin-category-search/releases) als ZIP herunter.
-2. Gehe im WordPress-Backend zu **Plugins → Installieren → Plugin hochladen** und wähle die ZIP-Datei aus.
-3. Aktiviere das Plugin.
+Das Plugin ist für die Einreichung im wordpress.org-Plugin-Verzeichnis vorbereitet, aber
+noch nicht freigegeben. Bis dahin:
 
-Alternativ den Ordner `woocommerce-admin-category-search` nach `wp-content/plugins/` kopieren und im Backend aktivieren.
+1. Lade den Code aus diesem Repository herunter (ZIP oder `git clone`).
+2. Kopiere den Ordner nach `wp-content/plugins/admin-category-search-for-woocommerce`.
+3. Aktiviere das Plugin im WordPress-Backend unter **Plugins**.
+
+Nach erfolgter Freigabe wird die Installation direkt über **Plugins → Installieren** im
+WordPress-Backend möglich sein.
 
 ## Verwendung
 
-Nach der Aktivierung erscheint im Produkt-Editor (**Produkte → Neu / Bearbeiten**) oberhalb der Produktkategorien-Liste ein Suchfeld mit dem Platzhalter „Kategorie suchen…“.
+Nach der Aktivierung erscheint im Produkt-Editor (**Produkte → Neu / Bearbeiten**) oberhalb der Produktkategorien-Liste ein Suchfeld mit dem Platzhalter „Search categories…“.
 
 - Beim Tippen werden nur passende Kategorien im Tab **„Alle”** angezeigt, der Treffer wird hervorgehoben.
 - Die Suche ignoriert Gross-/Kleinschreibung sowie Umlaute und Akzente.
@@ -50,25 +53,19 @@ Nach der Aktivierung erscheint im Produkt-Editor (**Produkte → Neu / Bearbeite
 
 > **Hinweis:** Das Plugin erweitert die klassische Kategorien-Metabox (`.categorydiv`). Der neue, React-basierte WooCommerce-Produkt-Editor verwendet diese Metabox nicht – dort steht die Suche derzeit nicht zur Verfügung.
 
-## Updates
-
-Das Plugin nutzt den [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) und bezieht Updates direkt aus den GitHub-Releases dieses Repositories. Neue Versionen erscheinen automatisch in der WordPress-Update-Übersicht.
-
-Releases werden bei jedem Push auf `main` automatisch anhand der Versionsnummer im Plugin-Header (`woocommerce-admin-category-search.php`) erstellt (siehe `.github/workflows/release.yml`).
-
 ## Entwicklung
 
 ```
-woocommerce-admin-category-search.php   # Plugin-Header, Konstanten, Update-Checker
+admin-category-search-for-woocommerce.php   # Plugin-Header, Konstanten
 includes/
-  └── class-wc-admin-category-search.php # Lädt Assets im Produkt-/Post-Editor
+  └── class-wacs-category-search.php        # Lädt Assets im Produkt-/Post-Editor
 assets/
-  └── admin-category-search.js           # Live-Such-Logik (jQuery)
-lib/                                     # Plugin Update Checker (Bibliothek)
+  └── admin-category-search.js              # Live-Such-Logik (jQuery)
+readme.txt                                  # wordpress.org-Plugin-Beschreibung
 ```
 
-Eine neue Version veröffentlichst du, indem du die `Version` im Plugin-Header **und** die Konstante `WACS_VERSION` erhöhst und nach `main` pushst.
+Eine neue Version veröffentlichst du, indem du die `Version` im Plugin-Header, die Konstante `WACS_VERSION` und den `Stable tag` in `readme.txt` erhöhst.
 
 ## Lizenz
 
-Privat – © [Simon Urech](https://urech.dev). Alle Rechte vorbehalten.
+GPLv2 oder später – siehe [gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html).

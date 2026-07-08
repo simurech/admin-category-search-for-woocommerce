@@ -3,19 +3,10 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class WC_Admin_Category_Search {
+class WACS_Category_Search {
 
     public function __construct() {
-        add_action('init', array($this, 'load_textdomain'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_assets'));
-    }
-
-    public function load_textdomain() {
-        load_plugin_textdomain(
-            'woocommerce-admin-category-search',
-            false,
-            dirname(plugin_basename(WACS_PLUGIN_FILE)) . '/languages'
-        );
     }
 
     public function enqueue_assets() {
@@ -35,9 +26,9 @@ class WC_Admin_Category_Search {
             true
         );
         wp_localize_script('wacs-category-search', 'wacsCatSearch', array(
-            'placeholder' => __('Kategorie suchen…', 'woocommerce-admin-category-search'),
-            'noResults'   => __('Keine Kategorien gefunden', 'woocommerce-admin-category-search'),
-            'ariaLabel'   => __('Produktkategorien durchsuchen', 'woocommerce-admin-category-search'),
+            'placeholder' => __('Search categories…', 'admin-category-search-for-woocommerce'),
+            'noResults'   => __('No categories found', 'admin-category-search-for-woocommerce'),
+            'ariaLabel'   => __('Search product categories', 'admin-category-search-for-woocommerce'),
         ));
 
         wp_register_style('wacs-category-search', false, array(), WACS_VERSION);
@@ -53,4 +44,4 @@ class WC_Admin_Category_Search {
     }
 }
 
-new WC_Admin_Category_Search();
+new WACS_Category_Search();

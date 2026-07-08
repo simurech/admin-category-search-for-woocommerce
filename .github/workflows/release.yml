@@ -20,7 +20,7 @@ jobs:
       - name: Version aus Plugin-Header lesen
         id: version
         run: |
-          VERSION=$(grep -m1 '^ \* Version:' woocommerce-admin-category-search.php | sed 's/.*Version: *//')
+          VERSION=$(grep -m1 '^ \* Version:' admin-category-search-for-woocommerce.php | sed 's/.*Version: *//')
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "tag=v$VERSION" >> $GITHUB_OUTPUT
 

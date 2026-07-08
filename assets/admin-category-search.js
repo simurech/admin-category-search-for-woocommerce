@@ -1,7 +1,7 @@
 jQuery(function ($) {
     var cfg = (typeof wacsCatSearch !== 'undefined') ? wacsCatSearch : {};
-    var placeholder = cfg.placeholder || 'Kategorie suchen…';
-    var noResultsText = cfg.noResults || 'Keine Kategorien gefunden';
+    var placeholder = cfg.placeholder || 'Search categories…';
+    var noResultsText = cfg.noResults || 'No categories found';
     var ariaLabel = cfg.ariaLabel || placeholder;
 
     var canNormalize = (typeof ''.normalize === 'function');
@@ -45,7 +45,7 @@ jQuery(function ($) {
         }
         var textNode = null;
         $label.contents().each(function () {
-            if (this.nodeType === 3 && $.trim(this.nodeValue) !== '') {
+            if (this.nodeType === 3 && String(this.nodeValue).trim() !== '') {
                 textNode = this;
             }
         });
@@ -188,7 +188,7 @@ jQuery(function ($) {
         function run() {
             activeIdx = -1;
             clearActive();
-            applyFilter($d, fold($.trim($i.val())));
+            applyFilter($d, fold(($i.val() || '').trim()));
         }
 
         $i.on('input', function () {
@@ -234,8 +234,9 @@ jQuery(function ($) {
     tryInit();
 
     if (window.MutationObserver) {
+        var observeTarget = document.getElementById('poststuff') || document.body;
         var obs = new MutationObserver(function () { tryInit(); });
-        obs.observe(document.body, { childList: true, subtree: true });
+        obs.observe(observeTarget, { childList: true, subtree: true });
         setTimeout(function () { obs.disconnect(); }, 20000);
     }
 });
