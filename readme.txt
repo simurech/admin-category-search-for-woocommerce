@@ -3,10 +3,10 @@ Contributors: simon61
 Tags: woocommerce, categories, admin, search, products
 Requires at least: 6.0
 Tested up to: 7.0
-Requires PHP: 8.0
+Requires PHP: 7.4
 WC tested up to: 10.9.3
 Stable tag: 2.0.0
-License: GPLv2 or later
+License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a live search field to the product categories metabox in the WooCommerce product editor.
