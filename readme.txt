@@ -13,7 +13,7 @@ Adds a live search field to the product categories metabox in the WooCommerce pr
 
 == Description ==
 
-Admin Category Search for WooCommerce adds a live search field to the **product categories metabox** in the WooCommerce product editor. Instead of endlessly scrolling through a long category list, just start typing and the list filters in real time.
+Scrolling through a hundred product categories to find the right checkbox gets old fast. Admin Category Search for WooCommerce adds a live search field to the **product categories metabox** in the WooCommerce product editor — start typing and the list filters in real time.
 
 **Features**
 
@@ -51,6 +51,14 @@ No. Filtering happens entirely client-side in JavaScript against the categories 
 = Is WooCommerce required? =
 
 Yes, WooCommerce must be installed and active.
+
+= Is this plugin compatible with High-Performance Order Storage (HPOS)? =
+
+Yes. The plugin only touches the product categories metabox and stores no order data, so it is unaffected by HPOS.
+
+= Is there a Pro version with more features? =
+
+No, this plugin is free and does one thing well. There are no paid upgrades or premium add-ons.
 
 == Screenshots ==
 
