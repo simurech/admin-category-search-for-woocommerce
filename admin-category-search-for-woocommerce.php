@@ -3,8 +3,8 @@
  * Plugin Name: Admin Category Search for WooCommerce
  * Description: Adds a live search field to the product categories metabox in the WooCommerce product editor.
  * Version: 2.0.0
- * Author: Simon Urech
- * Author URI: https://urech.dev
+ * Author: Pulacha Labs
+ * Author URI: https://pulacha-labs.ch/
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: admin-category-search-for-woocommerce
