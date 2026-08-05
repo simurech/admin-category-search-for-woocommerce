@@ -26,4 +26,11 @@ define('WACS_PLUGIN_FILE', __FILE__);
 define('WACS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('WACS_PLUGIN_URL', plugin_dir_url(__FILE__));
 
+add_action('before_woocommerce_init', function () {
+    if (class_exists(\Automattic\WooCommerce\Utilities\FeaturesUtil::class)) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', WACS_PLUGIN_FILE, true);
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('cart_checkout_blocks', WACS_PLUGIN_FILE, true);
+    }
+});
+
 require_once WACS_PLUGIN_DIR . 'includes/class-wacs-category-search.php';
