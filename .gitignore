@@ -1,1 +1,40 @@
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Local tooling
+.claude/
+CLAUDE.md
+.cursor/
+.cursorrules
+.cursorignore
+.windsurf/
+.windsurfrules
+.continue/
+.clinerules/
+.roo/
+.roorules
+.aider*
+.codeium/
+.amazonq/
+.copilot/
+copilot-instructions.md
+AGENTS.md
+.cody/
+.zed/
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
