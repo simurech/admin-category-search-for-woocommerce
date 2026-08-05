@@ -1,22 +1,136 @@
-# OS
+# =============================================================================
+# WordPress Plugin – .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# WordPress
+# -----------------------------------------------------------------------------
+wp-config.php
+wp-config-sample.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/backups/
+debug.log
+error_log
+
+# -----------------------------------------------------------------------------
+# Abhängigkeiten / Vendor
+# -----------------------------------------------------------------------------
+/node_modules/
+/vendor/*
+!/vendor/freemius/
+composer.phar
+# package-lock.json
+# composer.lock
+# yarn.lock
+
+# -----------------------------------------------------------------------------
+# Build / Distribution
+# -----------------------------------------------------------------------------
+/dist/
+/build/
+_temp/
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+*.orig
+migrate.php
+
+# -----------------------------------------------------------------------------
+# SASS / CSS
+# -----------------------------------------------------------------------------
+.sass-cache/
+*.css.map
+*.scss.map
+
+# -----------------------------------------------------------------------------
+# Logs & Debug
+# -----------------------------------------------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# -----------------------------------------------------------------------------
+# Betriebssystem
+# -----------------------------------------------------------------------------
+# macOS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+ehthumbs.db
 Thumbs.db
 desktop.ini
+$RECYCLE.BIN/
 
-# Editors / IDE
-.vscode/
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# IDEs & Editoren
+# -----------------------------------------------------------------------------
 .idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+.vscode/
+*.code-workspace
+.history/
 *.sublime-project
 *.sublime-workspace
 *.swp
 *.swo
+*.swn
+Session.vim
+.netrwhist
+tags
+auto-save-list
+tramp
+*.tmproj
+*.tmproject
+.tmignore
+.settings/
+.project
+.classpath
+.buildpath
+.externalToolBuilders/
+*.launch
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+.atom/
+.brackets.json
 
-# Local tooling
+# -----------------------------------------------------------------------------
+# KI-Assistenten & lokale Konfigurationsdateien
+# -----------------------------------------------------------------------------
 .claude/
 CLAUDE.md
+CLAUDE.local.md
+.anthropic/
 .cursor/
-.cursorrules
+.cursor-rules/
+.cursor-tasks/
 .cursorignore
+.cursorindexingignore
+.cursorrules
 .windsurf/
 .windsurfrules
 .continue/
@@ -24,21 +138,92 @@ CLAUDE.md
 .roo/
 .roorules
 .aider*
+.aider.conf.yml
+.aider.model.settings.yml
+.aider.model.metadata.json
 .codeium/
 .amazonq/
 .copilot/
 copilot-instructions.md
+.github/copilot-instructions.md
 AGENTS.md
 .cody/
 .zed/
+.gemini/
+GEMINI.md
+.google-gemini/
+.chatgpt/
+.openai/
+.openai-context/
+.deepseek/
+.tabnine/
+.tabnine_root
+.llm-cache/
+.ai-cache/
 
-# Logs
-*.log
+# Plugin-spezifische interne Dokumente (bei Bedarf pro Repo ergänzen)
+AI-KONTEXT.md
+PROJEKT-KONTEXT.md
+MASSNAHMENPLAN.md
+WPORG-REVIEW-PLAN.md
+ROADMAP-INTERN.md
+TODO-INTERN.md
+/plans/
 
-# Env
+# -----------------------------------------------------------------------------
+# Translation-Artefakte
+# -----------------------------------------------------------------------------
+messages.mo
+languages/messages.mo
+languages/*.po~
+
+# -----------------------------------------------------------------------------
+# Plugin-Check / Analyse-Exporte
+# -----------------------------------------------------------------------------
+plugin-check-feedback/
+plugin-check-results/
+*.plugin-check.json
+
+# -----------------------------------------------------------------------------
+# PHP / Composer
+# -----------------------------------------------------------------------------
+.phpunit.result.cache
+.php_cs.cache
+.php-cs-fixer.cache
+.phpcs-cache/
+phpcs.xml.dist
+.phpunit.cache/
+
+# -----------------------------------------------------------------------------
+# Node / npm / Yarn
+# -----------------------------------------------------------------------------
+.npm/
+.yarn/
+.pnp.*
+.yarn-integrity
+
+# -----------------------------------------------------------------------------
+# Environment
+# -----------------------------------------------------------------------------
 .env
 .env.*
+!.env.example
 
-# Build artifacts
-dist/
-*.zip
+# -----------------------------------------------------------------------------
+# Testing
+# -----------------------------------------------------------------------------
+/coverage/
+/.nyc_output/
+/reports/
+*.lcov
+
+# -----------------------------------------------------------------------------
+# Zertifikate & Secrets
+# -----------------------------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+secrets.json
+credentials.json
