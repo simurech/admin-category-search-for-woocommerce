@@ -33,11 +33,25 @@ jobs:
             echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Distributions-ZIP bauen
+        if: steps.tag_check.outputs.exists == 'false'
+        run: |
+          mkdir -p dist
+          git archive --format=zip \
+            --prefix=admin-category-search-for-woocommerce/ \
+            -o "dist/admin-category-search-for-woocommerce-${{ steps.version.outputs.version }}.zip" \
+            HEAD -- \
+            admin-category-search-for-woocommerce.php \
+            includes \
+            assets \
+            readme.txt
+
       - name: Release erstellen
         if: steps.tag_check.outputs.exists == 'false'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "${{ steps.version.outputs.tag }}" \
+            "dist/admin-category-search-for-woocommerce-${{ steps.version.outputs.version }}.zip" \
             --title "${{ steps.version.outputs.tag }}" \
             --latest

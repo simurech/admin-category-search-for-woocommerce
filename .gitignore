@@ -38,3 +38,7 @@ AGENTS.md
 # Env
 .env
 .env.*
+
+# Build artifacts
+dist/
+*.zip
