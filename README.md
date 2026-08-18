@@ -2,7 +2,7 @@
 
 **Live-Suche in der Produktkategorien-Metabox des WooCommerce-Produkt-Editors.**
 
-[![Stable Tag](https://img.shields.io/badge/stable-2.0.2-blue.svg)](https://github.com/simurech/admin-category-search-for-woocommerce/releases)
+[![Stable Tag](https://img.shields.io/badge/stable-2.0.3-blue.svg)](https://github.com/simurech/admin-category-search-for-woocommerce/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b.svg)](https://wordpress.org/)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-8.0%2B-96588a.svg)](https://woocommerce.com/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-8892be.svg)](https://php.net/)
@@ -36,7 +36,7 @@
 
 | Komponente | Minimum | Getestet bis |
 |---|---|---|
-| WordPress | 6.0 | 7.0 |
+| WordPress | 6.0 | 7.1 |
 | WooCommerce | aktiv erforderlich | 10.9.3 |
 | PHP | 7.4 | – |
 

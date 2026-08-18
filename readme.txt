@@ -2,10 +2,10 @@
 Contributors: simon61
 Tags: woocommerce, categories, admin, search, products
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
 WC tested up to: 10.9.3
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,9 @@ No, this plugin is free and does one thing well. There are no paid upgrades or p
 1. Live search field above the product categories checklist.
 
 == Changelog ==
+
+= 2.0.3 =
+* Kompatibilität mit WordPress 7.1 bestätigt
 
 = 2.0.2 =
 * Release-Paket enthält jetzt ein sauberes, direkt einreichbares ZIP
