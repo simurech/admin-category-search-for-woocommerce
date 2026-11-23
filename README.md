@@ -2,10 +2,10 @@
 
 **Live-Suche in der Produktkategorien-Metabox des WooCommerce-Produkt-Editors.**
 
-[![Stable Tag](https://img.shields.io/badge/stable-2.0.3-blue.svg)](https://github.com/simurech/admin-category-search-for-woocommerce/releases)
+[![Stable Tag](https://img.shields.io/badge/stable-2.0.4-blue.svg)](https://github.com/simurech/admin-category-search-for-woocommerce/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-21759b.svg)](https://wordpress.org/)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-8.0%2B-96588a.svg)](https://woocommerce.com/)
-[![PHP](https://img.shields.io/badge/PHP-7.4%2B-8892be.svg)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.3%2B-8892be.svg)](https://php.net/)
 [![Lizenz](https://img.shields.io/badge/Lizenz-GPL--2.0--or--later-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 > Statt bei vielen Kategorien endlos zu scrollen, tippst du einfach los: Das Suchfeld filtert die Checkbox-Liste in Echtzeit, hebt Treffer hervor und ist per Tastatur bedienbar.

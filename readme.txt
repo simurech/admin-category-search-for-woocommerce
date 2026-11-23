@@ -3,9 +3,9 @@ Contributors: simon61
 Tags: woocommerce, categories, admin, search, products
 Requires at least: 6.0
 Tested up to: 7.1
-Requires PHP: 7.4
-WC tested up to: 10.9.3
-Stable tag: 2.0.3
+Requires PHP: 8.3
+WC tested up to: 11.3.1
+Stable tag: 2.0.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ No, this plugin is free and does one thing well. There are no paid upgrades or p
 
 == Changelog ==
 
+= 2.0.4 =
+* PHP-Mindestversion auf 8.3 angehoben (ältere PHP-Versionen erhalten keine Sicherheitsupdates mehr), mit WooCommerce 11.3 getestet
+
 = 2.0.3 =
 * Kompatibilität mit WordPress 7.1 bestätigt
 
@@ -97,6 +100,9 @@ No, this plugin is free and does one thing well. There are no paid upgrades or p
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.0.4 =
+Requires PHP 8.3 or higher. Sites on older PHP versions keep the current version until PHP is updated.
 
 = 2.0.0 =
 Plugin renamed and moved to wordpress.org-only updates. If you previously received updates via GitHub, reinstall from wordpress.org to keep receiving updates.
