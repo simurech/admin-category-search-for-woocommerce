@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1544" height="500" viewBox="0 0 1544 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c7fc4"/>
+      <stop offset="1" stop-color="#174e7c"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0b2740" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1544" height="500" fill="url(#bg)"/>
+  <circle cx="1400" cy="-40" r="260" fill="#ffffff" opacity="0.05"/>
+  <circle cx="80" cy="520" r="220" fill="#ffffff" opacity="0.05"/>
+
+  <text x="96" y="205" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="700" fill="#ffffff">Admin Category Search</text>
+  <text x="96" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" font-weight="400" fill="#dbe9f6">for WooCommerce</text>
+  <text x="96" y="350" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="#ffffff" opacity="0.85">Find any category or brand in seconds —</text>
+  <text x="96" y="388" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" fill="#ffffff" opacity="0.85">in the product editor, Quick Edit and Bulk Edit.</text>
+
+  <!-- Mock-Metabox -->
+  <g filter="url(#sh)">
+    <rect x="1010" y="70" width="430" height="360" rx="14" fill="#ffffff"/>
+  </g>
+  <text x="1036" y="112" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1d2327">Product categories</text>
+  <rect x="1036" y="132" width="378" height="48" rx="6" fill="#ffffff" stroke="#2271b1" stroke-width="2.5"/>
+  <text x="1054" y="164" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#1d2327">musli</text>
+  <circle cx="1388" cy="155" r="9" fill="none" stroke="#50575e" stroke-width="2.5"/>
+  <path d="M1395 162 l7 7" stroke="#50575e" stroke-width="2.5" stroke-linecap="round"/>
+
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#1d2327">
+    <rect x="1036" y="210" width="22" height="22" rx="4" fill="none" stroke="#8c8f94" stroke-width="2"/>
+    <text x="1072" y="229">Food</text>
+    <rect x="1064" y="254" width="22" height="22" rx="4" fill="#2271b1"/>
+    <path d="M1069 265 l5 5 l9 -10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1098" y="250" width="61" height="32" rx="4" fill="#fff3a3"/>
+    <text x="1100" y="273">Müsli</text>
+    <text x="1166" y="273" fill="#50575e">&amp; Granola</text>
+    <rect x="1064" y="298" width="22" height="22" rx="4" fill="none" stroke="#8c8f94" stroke-width="2"/>
+    <rect x="1098" y="294" width="61" height="32" rx="4" fill="#fff3a3"/>
+    <text x="1100" y="317">Müsli</text>
+    <text x="1166" y="317" fill="#50575e">bars</text>
+  </g>
+  <line x1="1036" y1="350" x2="1414" y2="350" stroke="#dcdcde" stroke-width="2"/>
+  <text x="1036" y="392" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#50575e">☐ Show selected only</text>
+  <text x="1414" y="392" text-anchor="end" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#50575e">1 selected</text>
+</svg>
